@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Graph.h"
 #include "Relation.h"
+#include "User.h"
 
 using namespace std;
 

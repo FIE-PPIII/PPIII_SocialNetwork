@@ -3,4 +3,4 @@ project(base_cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(base_cpp main.cpp Node.h Graph.h Relation.h)
+add_executable(base_cpp main.cpp Node.h Graph.h Relation.h User.cpp User.h)
