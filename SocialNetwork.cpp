@@ -45,3 +45,11 @@ void SocialNetwork::unfollowUser(int follower, int followed) {
     this->users.at(follower).unfollow(followed);
     this->users.at(followed).removeFollower(follower);
 }
+
+void SocialNetwork::setUserStatus(int key, string status) {
+    this->users.at(key).setStatus(status);
+}
+
+string SocialNetwork::getUserFeed(int key) {
+    return this->users.at(key).getFeed();
+}

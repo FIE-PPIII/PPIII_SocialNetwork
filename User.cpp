@@ -17,7 +17,7 @@ string User::getDisplayName() {
 }
 
 string User::getStatus() {
-    return this->getStatus();
+    return this->status;
 }
 
 const map<int, User*>& User::getFollowing() {
@@ -66,7 +66,7 @@ void User::removeFollower(int key) {
 }
 
 string User::getFeed() {
-    string feed = "Feed:\n";
+    string feed = "This is your feed, " + this->displayName + ":";
     for (map<int, User*>::iterator it = this->following.begin(); it != this->following.end(); it++) {
         feed = feed + "\n" + (it->second->displayName) + ": " + (it->second->getStatus());
     }

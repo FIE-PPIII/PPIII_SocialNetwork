@@ -25,6 +25,8 @@ public:
     void deleteUser(int);
     void followUser(int follower, int followed);
     void unfollowUser(int follower, int followed);
+    void setUserStatus(int, string);
+    string getUserFeed(int);
 };
 
 
