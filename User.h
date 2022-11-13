@@ -16,6 +16,7 @@ private:
     string displayName;
     string status;
 public:
+    User() {}
     User(int, string, string);
     ~User();
 
