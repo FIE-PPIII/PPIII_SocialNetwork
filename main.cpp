@@ -1,19 +1,24 @@
 #include <iostream>
-#include "Graph.h"
+#include "SocialNetwork.h"
 
 using namespace std;
 
 int main()
 {
-    cout<<"Hello, world!"<<endl;
-    Graph<int, float, bool> network;
-    network.addNode(1, 1.0);
-    network.addNode(2, 2.0);
-    network.addNode(3, 3.0);
-    network.addNode(4, 4.0);
+    SocialNetwork network = SocialNetwork();
+    network.addUser(User(1, "jnemi", "J.B. Nemi"));
+    network.addUser(User(2, "dtrump", "Donald Trump"));
+    network.addUser(User(3, "bobama", "Barack Obama"));
+    network.followUser(1, 2);
+    network.followUser(1, 3);
+    network.followUser(2, 3);
+    network.followUser(3, 2);
+    network.getUser("dtrump").setStatus("Vote Red!");
+    network.getUser("bobama").setStatus("Vote Blue!");
 
-    network.setEdgeBetween(3, 4, true);
-    network.eraseNode(3);
+    cout<<network.getUser("jnemi").getFeed()<<endl<<endl;
+    cout<<network.getUser("dtrump").getFeed()<<endl<<endl;
+    cout<<network.getUser("bobama").getFeed()<<endl<<endl;
 
     return 0;
 }
