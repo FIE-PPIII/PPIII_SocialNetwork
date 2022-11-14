@@ -1,0 +1,8 @@
+# ninja log v5
+1	635	6900880195246763	CMakeFiles/base_cpp.dir/main.cpp.obj	29bc6921b693216e
+11	717	6900881258992896	CMakeFiles/base_cpp.dir/User.cpp.obj	a840af2e99017a2f
+5	915	6900881260991856	CMakeFiles/base_cpp.dir/SocialNetwork.cpp.obj	93e853fb749f0a4d
+916	1122	6900881262990753	base_cpp.exe	48b8fa31dfed775a
+1	233	6900882278586478	build.ninja	7c9b7ce4f8733c7d
+5	585	6900882374176398	CMakeFiles/base_cpp.dir/main.cpp.obj	29bc6921b693216e
+586	789	6900882376175314	base_cpp.exe	48b8fa31dfed775a
